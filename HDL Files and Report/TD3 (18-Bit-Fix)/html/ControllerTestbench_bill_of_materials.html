@@ -1,0 +1,785 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+High-level Resource Utilization Report for ControllerTestbench
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdBillOfMaterials'); else local_onload();}} catch(err) {};hdlTableShrink(this, 'Input_Port');hdlTableShrink(this, 'Output_Port');hdlTableShrink(this, 'Adder_2_1');hdlTableShrink(this, 'Adder_3_1');hdlTableShrink(this, 'Adder_3_2');hdlTableShrink(this, 'Adder_4_1');hdlTableShrink(this, 'Adder_4_2');">
+<script>
+<!--
+function hdlTableShrink(o,tagNameStr)
+{
+var temp = document.getElementsByName(tagNameStr);
+if (temp[0].style.display == "")
+{
+	temp[0].style.display = "none";
+	o.innerHTML = '<span style="font-family:monospace">[+]</span>';
+}
+else
+{
+	temp[0].style.display = "";
+	o.innerHTML = '<span style="font-family:monospace">[-]</span>';
+}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableCollapseAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "none";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[+]</span>';
+	}
+}
+// -->
+</script>
+<script>
+<!--
+function hdlTableExpandAll(o, numNtks, numComps)
+{
+	var id = "";
+	for (i = 1; i <= numNtks; i++)
+	{
+		for (j = 1; j <= numComps; j++)
+		{
+			id = "Multiply" + "_" + i + "_" + j;
+			var temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Adder" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Subtractor" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Register" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "RAM" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+			id = "Multiplexer" + "_" + i + "_" + j;
+			temp = document.getElementsByName(id);
+			if (temp != null && temp.length > 0)
+			{
+				temp[0].style.display = "";
+			}
+		}
+	}
+	var collapsibles = document.getElementsByName('collapsible');
+	for (i = 0; i < collapsibles.length; i++)
+	{
+		collapsibles[i].innerHTML = '<span style="font-family:monospace">[-]</span>';
+	}
+}
+// -->
+</script>
+<font SIZE="+2" COLOR="#000066">
+Generic Resource Report for ControllerTestbench
+</font>
+<br /><br /><br /><a name="Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Summary
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Multipliers
+</td>
+<td align="center" valign="top" style="border-style: none">
+49
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Adders/Subtractors
+</td>
+<td align="center" valign="top" style="border-style: none">
+152
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+724
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Total 1-Bit Registers
+</td>
+<td align="center" valign="top" style="border-style: none">
+10986
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+RAMs
+</td>
+<td align="center" valign="top" style="border-style: none">
+0
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Multiplexers
+</td>
+<td align="center" valign="top" style="border-style: none">
+292
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+I/O Bits
+</td>
+<td align="center" valign="top" style="border-style: none">
+184
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Static Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+51
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Dynamic Shift operators
+</td>
+<td align="center" valign="top" style="border-style: none">
+7
+</td>
+
+</tr>
+
+</table>
+<br /><br /><a name="Detailed Report">
+<font size="+1" color="#000066">
+<b class="midprod">
+Detailed Report
+</b>
+
+</font>
+
+</a>
+<br /><br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ControllerTestbench:1279')" name="code2model" class="code2model">
+Subsystem Reference2
+</a>
+
+</h5>
+<h5>
+Registers (32)
+</h5>
+<span style="font-family:monospace">
+18-bit Register 							: 32
+</span>
+<br /><h5>
+Number of I/O Bits (184)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Input_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Input Bits: 165
+</span>
+<span name="Input_Port" id="Input_Port">
+<ul class="SystemdefinedCollapse" id="91a55321-11a8-4e70-a483-0b99b2a876c2" dataCollapse="off">
+<li>
+clk: 1 bit
+</li>
+<li>
+reset: 1 bit
+</li>
+<li>
+clk_enable: 1 bit
+</li>
+<li>
+Observations_0: 18 bits
+</li>
+<li>
+Observations_1: 18 bits
+</li>
+<li>
+Observations_2: 18 bits
+</li>
+<li>
+Observations_3: 18 bits
+</li>
+<li>
+Observations_4: 18 bits
+</li>
+<li>
+Observations_5: 18 bits
+</li>
+<li>
+Observations_6: 18 bits
+</li>
+<li>
+Observations_7: 18 bits
+</li>
+<li>
+Observations_8: 18 bits
+</li>
+
+</ul>
+<span class="SDCollapseControl" onclick="collapseSD(this, '91a55321-11a8-4e70-a483-0b99b2a876c2')" onmouseover="this.style.cursor = 'pointer'">
+&#8743; Less
+</span>
+<br />
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Output_Port')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+Number of Output Bits: 19
+</span>
+<span name="Output_Port" id="Output_Port">
+<ul>
+<li>
+ce_out: 1 bit
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ControllerTestbench:1279:36')" name="code2model" class="code2model">
+Action
+</a>
+: 18 bits
+</li>
+
+</ul>
+
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ControllerTestbench:1279:2')" name="code2model" class="code2model">
+Output Layer (1 Neuron)
+</a>
+
+</h5>
+<h5>
+Multipliers (5)
+</h5>
+<span style="font-family:monospace">
+18x19-bit Multiply 							: 2
+</span>
+<br /><span style="font-family:monospace">
+24x34-bit Multiply 							: 1
+</span>
+<br /><span style="font-family:monospace">
+23x20-bit Multiply 							: 1
+</span>
+<br /><span style="font-family:monospace">
+20x23-bit Multiply 							: 1
+</span>
+<br /><h5>
+Adders/Subtractors (108)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_2_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18x18-bit Adder 							: 4
+</span>
+<span name="Adder_2_1" id="Adder_2_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('ControllerTestbench:1279:8')" name="code2model" class="code2model">
+Product1
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ControllerTestbench:1279:6')" name="code2model" class="code2model">
+Add1
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span style="font-family:monospace">
+8x8-bit Adder 							: 6
+</span>
+<br /><span style="font-family:monospace">
+10x10-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+32x32-bit Adder 							: 3
+</span>
+<br /><span style="font-family:monospace">
+6x6-bit Adder 							: 2
+</span>
+<br /><span style="font-family:monospace">
+11x11-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+35x35-bit Adder 							: 13
+</span>
+<br /><span style="font-family:monospace">
+9x9-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+13x13-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+24x24-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+31x31-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+36x36-bit Adder 							: 10
+</span>
+<br /><span style="font-family:monospace">
+23x23-bit Adder 							: 1
+</span>
+<br /><span style="font-family:monospace">
+37x37-bit Adder 							: 39
+</span>
+<br /><span style="font-family:monospace">
+19-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+9x9-bit Subtractor 							: 3
+</span>
+<br /><span style="font-family:monospace">
+8x8-bit Subtractor 							: 4
+</span>
+<br /><span style="font-family:monospace">
+35x35-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+6x6-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+13x13-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+18x18-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+24x24-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+31x31-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+36x36-bit Subtractor 							: 7
+</span>
+<br /><span style="font-family:monospace">
+37-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+10-bit Subtractor 							: 1
+</span>
+<br /><span style="font-family:monospace">
+28-bit Subtractor 							: 1
+</span>
+<br /><h5>
+Registers (530)
+</h5>
+<span style="font-family:monospace">
+18-bit Register 							: 11
+</span>
+<br /><span style="font-family:monospace">
+1-bit Register 							: 179
+</span>
+<br /><span style="font-family:monospace">
+8-bit Register 							: 129
+</span>
+<br /><span style="font-family:monospace">
+9-bit Register 							: 5
+</span>
+<br /><span style="font-family:monospace">
+128-bit Register 							: 3
+</span>
+<br /><span style="font-family:monospace">
+60-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+23-bit Register 							: 49
+</span>
+<br /><span style="font-family:monospace">
+6-bit Register 							: 4
+</span>
+<br /><span style="font-family:monospace">
+24-bit Register 							: 41
+</span>
+<br /><span style="font-family:monospace">
+36-bit Register 							: 35
+</span>
+<br /><span style="font-family:monospace">
+34-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+35-bit Register 							: 16
+</span>
+<br /><span style="font-family:monospace">
+39-bit Register 							: 2
+</span>
+<br /><span style="font-family:monospace">
+4-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+13-bit Register 							: 2
+</span>
+<br /><span style="font-family:monospace">
+31-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+20-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+21-bit Register 							: 3
+</span>
+<br /><span style="font-family:monospace">
+37-bit Register 							: 36
+</span>
+<br /><span style="font-family:monospace">
+3-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+5-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+7-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+11-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+15-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+17-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+19-bit Register 							: 1
+</span>
+<br /><span style="font-family:monospace">
+26-bit Register 							: 3
+</span>
+<br /><h5>
+Multiplexers (286)
+</h5>
+<span style="font-family:monospace">
+1-bit 2-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+18-bit 2-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+8-bit 2-to-1 Multiplexer 							: 165
+</span>
+<br /><span style="font-family:monospace">
+9-bit 2-to-1 Multiplexer 							: 8
+</span>
+<br /><span style="font-family:monospace">
+23-bit 2-to-1 Multiplexer 							: 9
+</span>
+<br /><span style="font-family:monospace">
+36-bit 2-to-1 Multiplexer 							: 18
+</span>
+<br /><span style="font-family:monospace">
+34-bit 2-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+6-bit 3-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+6-bit 2-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+39-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+35-bit 2-to-1 Multiplexer 							: 26
+</span>
+<br /><span style="font-family:monospace">
+4-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+13-bit 2-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+24-bit 2-to-1 Multiplexer 							: 3
+</span>
+<br /><span style="font-family:monospace">
+31-bit 2-to-1 Multiplexer 							: 2
+</span>
+<br /><span style="font-family:monospace">
+20-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+15-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+37-bit 2-to-1 Multiplexer 							: 34
+</span>
+<br /><span style="font-family:monospace">
+25-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+26-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><span style="font-family:monospace">
+27-bit 2-to-1 Multiplexer 							: 1
+</span>
+<br /><h5>
+Number of Shift operators (58)
+</h5>
+<span style="font-family:monospace">
+Static Shift Left 							: 13
+</span>
+<br /><span style="font-family:monospace">
+Static Shift Left 							: 37
+</span>
+<br /><span style="font-family:monospace">
+Static Shift Right 							: 1
+</span>
+<br /><span style="font-family:monospace">
+128-bit Dynamic Shift Left 							: 1
+</span>
+<br /><span style="font-family:monospace">
+39-bit Dynamic Shift Left 							: 1
+</span>
+<br /><span style="font-family:monospace">
+36-bit Dynamic Shift Left 							: 1
+</span>
+<br /><span style="font-family:monospace">
+26-bit Dynamic Shift Left 							: 1
+</span>
+<br /><span style="font-family:monospace">
+39-bit Dynamic Shift Right 							: 1
+</span>
+<br /><span style="font-family:monospace">
+36-bit Dynamic Shift Right 							: 1
+</span>
+<br /><span style="font-family:monospace">
+26-bit Dynamic Shift Right 							: 1
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ControllerTestbench:1279:21')" name="code2model" class="code2model">
+Input Layer (4 Neurons)
+</a>
+
+</h5>
+<h5>
+Multipliers (36)
+</h5>
+<span style="font-family:monospace">
+18x18-bit Multiply 							: 36
+</span>
+<br /><h5>
+Adders/Subtractors (36)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_3_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18x18-bit Adder 							: 32
+</span>
+<span name="Adder_3_1" id="Adder_3_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('ControllerTestbench:1279:27')" name="code2model" class="code2model">
+Product
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ControllerTestbench:1279:28')" name="code2model" class="code2model">
+Product2
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_3_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+32x32-bit Adder 							: 4
+</span>
+<span name="Adder_3_2" id="Adder_3_2">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('ControllerTestbench:1279:25')" name="code2model" class="code2model">
+Add
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Registers (128)
+</h5>
+<span style="font-family:monospace">
+18-bit Register 							: 124
+</span>
+<br /><span style="font-family:monospace">
+1-bit Register 							: 4
+</span>
+<br /><h5>
+Multiplexers (4)
+</h5>
+<span style="font-family:monospace">
+18-bit 2-to-1 Multiplexer 							: 4
+</span>
+<br /><p><hr /></p><h5>
+Report for Subsystem:    <a href="matlab:coder.internal.code2model('ControllerTestbench:1279:12')" name="code2model" class="code2model">
+Hidden Layer (2 Neurons)
+</a>
+
+</h5>
+<h5>
+Multipliers (8)
+</h5>
+<span style="font-family:monospace">
+18x19-bit Multiply 							: 8
+</span>
+<br /><h5>
+Adders/Subtractors (8)
+</h5>
+<span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_4_1')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+18x18-bit Adder 							: 6
+</span>
+<span name="Adder_4_1" id="Adder_4_1">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('ControllerTestbench:1279:1273')" name="code2model" class="code2model">
+Product
+</a>
+
+</li>
+<li>
+<a href="matlab:coder.internal.code2model('ControllerTestbench:1279:1274')" name="code2model" class="code2model">
+Product2
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><span name="collapsible" id="collapsible" style="font-family:monospace" onclick="hdlTableShrink(this, 'Adder_4_2')" onmouseover="this.style.cursor = 'pointer'">
+[+]
+</span>
+<span style="font-family:monospace">
+32x32-bit Adder 							: 2
+</span>
+<span name="Adder_4_2" id="Adder_4_2">
+<ul>
+<li>
+<a href="matlab:coder.internal.code2model('ControllerTestbench:1279:1271')" name="code2model" class="code2model">
+Add
+</a>
+
+</li>
+
+</ul>
+
+</span>
+<br /><h5>
+Registers (34)
+</h5>
+<span style="font-family:monospace">
+18-bit Register 							: 32
+</span>
+<br /><span style="font-family:monospace">
+1-bit Register 							: 2
+</span>
+<br /><h5>
+Multiplexers (2)
+</h5>
+<span style="font-family:monospace">
+18-bit 2-to-1 Multiplexer 							: 2
+</span>
+<br /><p><hr /></p>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+ControllerTestbench/Controller_equiv_DC_motor1/PI_Ctrl_float_speed/Reinforcement Learning1/Subsystem Reference2/Hidden Layer (2 Neurons) --> Hidden_Layer_2_Neurons
+ControllerTestbench/Controller_equiv_DC_motor1/PI_Ctrl_float_speed/Reinforcement Learning1/Subsystem Reference2/Input Layer (4 Neurons) --> Input_Layer_4_Neurons
+ControllerTestbench/Controller_equiv_DC_motor1/PI_Ctrl_float_speed/Reinforcement Learning1/Subsystem Reference2/Output Layer (1 Neuron)/nfp_convert_single_to_sfix_18_En16 --> nfp_convert_single_to_sfix_18_En16
+ControllerTestbench/Controller_equiv_DC_motor1/PI_Ctrl_float_speed/Reinforcement Learning1/Subsystem Reference2/Output Layer (1 Neuron)/nfp_convert_sfix_18_En11_to_single --> nfp_convert_sfix_18_En11_to_single
+ControllerTestbench/Controller_equiv_DC_motor1/PI_Ctrl_float_speed/Reinforcement Learning1/Subsystem Reference2/Output Layer (1 Neuron)/nfp_tanh_single --> nfp_tanh_single
+ControllerTestbench/Controller_equiv_DC_motor1/PI_Ctrl_float_speed/Reinforcement Learning1/Subsystem Reference2/Output Layer (1 Neuron) --> Output_Layer_1_Neuron
+ControllerTestbench/Controller_equiv_DC_motor1/PI_Ctrl_float_speed/Reinforcement Learning1/Subsystem Reference2 --> Subsystem_Reference2

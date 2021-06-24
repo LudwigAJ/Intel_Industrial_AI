@@ -1,0 +1,9 @@
+vlib work
+vmap -c
+vlog  Hidden_Layer_2_Neurons.v
+vlog  Input_Layer_4_Neurons.v
+vlog  nfp_convert_single_to_sfix_18_En16.v
+vlog  nfp_convert_sfix_18_En11_to_single.v
+vlog  nfp_tanh_single.v
+vlog  Output_Layer_1_Neuron.v
+vlog  Subsystem_Reference2.v
