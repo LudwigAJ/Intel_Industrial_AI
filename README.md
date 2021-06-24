@@ -5,7 +5,7 @@
 
 
 ### Here is a video detailing our work and progress.
-#### Insert link here.
+#### https://youtu.be/8jF9seg6sp4
 
 
 ### This GitHub is linked to from the documentation written for this project and serves as the storage for our models and code.
