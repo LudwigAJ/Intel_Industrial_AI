@@ -4,7 +4,7 @@
 ### The solution veered towards using Reinforcement Learning to solve this problem. The final Neural Network would then be able to be exported to HDL and synthesized for an FPGA.
 
 
-### Here is a video detailing our work and progress.
+### Here is a video demonstrating our work and progress.
 #### https://youtu.be/8jF9seg6sp4
 
 
