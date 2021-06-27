@@ -14,8 +14,6 @@
 ### Here is a video demonstrating our work and progress.
 #### https://youtu.be/8jF9seg6sp4
 
-
 ### This GitHub is linked to from the documentation written for this project and serves as the storage for our models and code.
 
-### It also contains a leaflet designed by us as well as the documentation detailing our work and progress.
 ##### Please note that any promises/data presented about any products or services is purely done by the us and not Intel. It is all fictional and purely there as examples for us. i.e. don't sue us nor Intel for stuff seen here.
