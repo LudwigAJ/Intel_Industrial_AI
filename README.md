@@ -6,9 +6,10 @@
 #### The solution veered towards using Reinforcement Learning to solve this problem. The final Neural Network would then be able to be exported to HDL and synthesized for an FPGA.
 
 ## Contents of Repository
-### In this repo you will find 3 folders. In the two named 'HDL Files and Report/...' and 'Models from report/...' you will find the data/figures, Simulink models, and MatLab scripts which are mentioned in the report. There is also an addition folder called 'extraModels', this folder contains some extra trained and untrained variations of the algorithms which were tested in our work.
-
-
+### Folders
+#### In this repo you will find 3 folders. In the two named 'HDL Files and Report/...' and 'Models from report/...' you will find the data/figures, Simulink models, and MatLab scripts which are mentioned in the report. There is also an addition folder called 'extraModels', this folder contains some extra trained and untrained variations of the algorithms which were tested in our work.
+### Documentation and Leaflet
+#### You will also be able to find PDFs of the Leaflet made for the project, as well as the OneNote used for taking notes. The repo of course also includes the final documentation for our project.
 
 ### Here is a video demonstrating our work and progress.
 #### https://youtu.be/8jF9seg6sp4
